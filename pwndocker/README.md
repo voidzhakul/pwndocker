@@ -21,15 +21,15 @@
 
 ### Build by yourself
 
-```
-$ docker build -t pwndocker .
-$ docker run -it --rm -v $(pwd):/pwnfile --privileged pwndocker
+```bash
+docker build -t pwndocker .
+docker run -it --rm -v $(pwd):/pwnfile --privileged pwndocker
 ```
 
 ### Docker pull from Aliyun
 
-```
-$ docker pull registry.cn-shenzhen.aliyuncs.com/zhakul/docker:pwndocker
+```bash
+docker pull registry.cn-shenzhen.aliyuncs.com/zhakul/docker:pwndocker
 ```
 
 ## Remind
