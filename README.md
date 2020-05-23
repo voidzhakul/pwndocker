@@ -23,7 +23,7 @@
 
 ```bash
 docker build -t pwndocker .
-docker run -it --rm -v $(pwd):/pwnfile --privileged pwndocker
+docker run -it --rm -v $(pwd):/pwnfile --privileged pwndocker /bin/bash
 ```
 
 ### Docker pull from Aliyun
