@@ -1,6 +1,6 @@
 # Pwndocker
 
-基于Ubuntu18.04制作的一个用于PWN的docker镜像
+基于Ubuntu22.04制作的一个用于PWN的docker镜像
 
 ## Tools
 
@@ -15,7 +15,7 @@
 - strace
 - ltrace
 - qemu
-- Linux_server(IDA7.0)
+- Linux_server(IDA7.4)
 
 ## Use
 
@@ -25,16 +25,6 @@
 docker build -t pwndocker .
 docker run -it --rm -v $(pwd):/pwnfile --privileged pwndocker /bin/bash
 ```
-
-### Docker pull from Aliyun
-
-```bash
-docker pull registry.cn-shenzhen.aliyuncs.com/zhakul/docker:pwndocker
-```
-
-## Remind
-
-镜像中apt和pip源已均被换成阿里源，有其他需要请自行替换
 
 ### 关于gdb.attach()
 
